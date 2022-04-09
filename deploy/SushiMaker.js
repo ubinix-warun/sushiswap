@@ -1,4 +1,4 @@
-const { WETH_ADDRESS } = require("@sushiswap/core-sdk")
+const { WETH_ADDRESS } = require("sushiswap-sdk-nervos")
 
 module.exports = async function ({ ethers: { getNamedSigner }, getNamedAccounts, deployments }) {
   const { deploy } = deployments
