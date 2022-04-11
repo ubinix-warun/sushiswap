@@ -7,6 +7,12 @@ module.exports = async function ({ getNamedAccounts, deployments }) {
     from: deployer,
     log: true,
   })
+
+  await deploy("USDCMock", {
+    from: deployer,
+    log: true,
+  })
+  
 }
 
 module.exports.skip = ({ getChainId }) =>
